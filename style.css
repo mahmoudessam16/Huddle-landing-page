@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(257, 40%, 49%);
+}
+body .container {
+  width: 90%;
+  margin: 40px auto;
+}
+body .container #logo {
+  width: 180px;
+}
+body .container .landing {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 0px 0;
+}
+body .container .landing .image {
+  flex: 1.2;
+}
+body .container .landing .image img {
+  width: 100%;
+}
+body .container .landing .info {
+  flex: 1;
+  padding: 30px;
+}
+body .container .landing .info h1 {
+  color: white;
+  font-size: 36px;
+  padding-right: 100px;
+  font-family: "Poppins", sans-serif;
+}
+body .container .landing .info p {
+  margin: 25px 0;
+  color: #eee;
+}
+body .container .landing .info button {
+  cursor: pointer;
+  width: 180px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0px 0px 5px 2px hsl(300, 69%, 71%);
+  transition: 0.3s;
+}
+body .container .landing .info button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+body .container .icons {
+  display: flex;
+  justify-content: end;
+}
+body .container .icons .icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body .container .icons .icon:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+body .container .icons .icon i {
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  .container #logo {
+    width: 140px !important;
+  }
+  .container .landing {
+    flex-direction: column;
+  }
+  .container .landing .info {
+    text-align: center;
+    padding: 15px !important;
+  }
+  .container .landing .info h1 {
+    font-size: 25px !important;
+    padding: 0 !important;
+  }
+  .container .landing .info p {
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .container .landing .info button {
+    width: 220px !important;
+  }
+  .container .icons {
+    margin: 30px 0;
+    justify-content: center !important;
+  }
+  .container .icons .icon {
+    margin: 0 !important;
+  }
+  .container .icons .icon:nth-child(2) {
+    margin: 0 15px !important;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,128 @@
+// Variables
+$Violet: hsl(257, 40%, 49%);
+$SoftMagenta: hsl(300, 69%, 71%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $Violet;
+    .container {
+        width: 90%;
+        margin: 40px auto;
+        #logo {
+            width: 180px;
+        }
+        .landing {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 0 0px 0;
+            .image {
+                flex: 1.2;
+                img {
+                    width: 100%;
+                }
+            }
+            .info {
+                flex: 1;
+                padding: 30px;
+                h1 {
+                    color: white;
+                    font-size: 36px;
+                    padding-right: 100px;
+                    font-family: 'Poppins', sans-serif;
+                }
+                p {
+                    margin: 25px 0;
+                    color: #eee;
+                }
+                button {
+                    cursor: pointer;
+                    width: 180px;
+                    padding: 15px;
+                    border-radius: 30px;
+                    border: none;
+                    outline: none;
+                    background-color: white;
+                    color: $Violet;
+                    font-weight: 500;
+                    font-size: 16px;
+                    box-shadow: 0px 0px 5px 2px $SoftMagenta;
+                    transition: 0.3s;
+                    &:hover {
+                        background-color: $SoftMagenta;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .icons {
+            display: flex;
+            justify-content: end;
+            .icon {
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+                border: 1px solid white;
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover {
+                    color: $SoftMagenta;
+                    border-color: $SoftMagenta;
+                }
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .container {
+        #logo {
+            width: 140px !important;
+        }
+        .landing {
+            flex-direction: column;
+            .info {
+                text-align: center;
+                padding: 15px !important;
+                h1 {
+                    font-size: 25px !important;
+                    padding: 0 !important;
+                }
+                p {
+                    line-height: 1.5;
+                    font-size: 16px;
+                }
+                button {
+                    width: 220px !important;
+                }
+            }
+        }
+        .icons {
+            margin: 30px 0;
+            justify-content: center !important;
+            .icon {
+                margin: 0 !important;
+            }
+            .icon:nth-child(2) {
+                margin: 0 15px !important;
+            }
+        }
+    }
+}
